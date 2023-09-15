@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculator</title>
+        <style>
+            body{
+               
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .container{
+                background-color: rgb(219, 211, 211);
+                display: grid;
+                grid-template-columns:7em 7em 7em 7em;
+                row-gap:1em;
+                column-gap:0;
+                padding: 1em;
+                margin-top: 3em;
+                border-radius:0.8em;
+            }
+            button{
+                font-size: 100%;
+                font-weight: 400;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                border: none;
+               height: 5em;
+               width: 5em;
+                background-color: black;
+                color: antiquewhite;
+                border-radius: 50%;
+                 transition:transform 0.5s ease-in-out ;
+                 margin-left:0.55em;
+            }
+            button:hover{
+                color:aliceblue;
+                background-color:rgb(72, 180, 213);
+                transform:scale(1.1);
+                transition: 0.4s;
+                box-shadow: 2px 1px 0.5 rgba(0, 0, 0, 0.5);
+            }
+            .equal{
+               
+                border-radius:0%;
+                width: 27em;
+                height: 2.3em;
+                padding: 0;
+
+            }
+            input{
+                height: 3em;
+            }
+           
+        </style>
+        <body>
+            <p class="ok"></p>
+            <div class="container">  
+               
+            <button onclick="
+            let symbol='1';
+              let exp='';
+               exp+=symbol;
+              
+               
+               const a= document.querySelector('.ok').innerHTML;      
+               a=exp; 
+            ">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>ac</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>+</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>-</button>
+            <button>*</button>
+            <button>0</button>
+            <button>/</button>
+            <button>%</button>
+            <button class="equal">=</button>
+            </div>
+            <script>
+              
+            </script>
+        </body>
+    </head>
+</html>
